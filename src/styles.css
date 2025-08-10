@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background-color: #0d1117;
+    color: white;
+}
+
+header {
+    background-color: #161b22;
+    padding: 0.75rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+header select {
+    background-color: #21262d;
+    color: white;
+    border: 1px solid #30363d;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+.transcripts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    max-width: 100%;
+}
+
+
+/* Segment bubble style */
+
+.segment {
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    max-width: 90%;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.segment.patient {
+    background-color: #1f6feb;
+    align-self: flex-start;
+}
+
+.segment.provider {
+    background-color: #2ea043;
+    align-self: flex-end;
+}
+
+.segment .meta {
+    font-size: 0.7rem;
+    opacity: 0.8;
+    margin-bottom: 0.2rem;
+}
+
+
+/* Floating mic button */
+
+.mic-btn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #1f6feb;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.mic-btn.recording {
+    box-shadow: 0 0 20px 4px rgba(255, 0, 0, 0.7);
+    background-color: #f85149;
+}
+
+
+/* Responsive layout for larger screens */
+
+@media (min-width: 768px) {
+    .transcripts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .segment.patient {
+        justify-self: start;
+        max-width: 95%;
+    }
+    .segment.provider {
+        justify-self: end;
+        max-width: 95%;
+    }
+}
+
+
+/* Smooth fade-in animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
