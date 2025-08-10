@@ -6,7 +6,7 @@ A real-time multilingual healthcare translation web app that converts spoken inp
 
 ## Demo
 
-[Live Demo Link](https://your-app-url.com)
+[Live Demo Link][(https://healthcaretranslator1.netlify.app/)]
 
 ---
 
