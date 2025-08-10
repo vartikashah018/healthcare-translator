@@ -36,27 +36,25 @@ A real-time multilingual healthcare translation web app that converts spoken inp
    ```bash
    git clone https://github.com/your-username/healthcare-translation-vite.git
    cd healthcare-translation-vite
-/**
- * Usage Guide:
- * 
- * 1. Select source and target languages from the dropdown menus.
- * 2. Click "Start Speaking" and talk into your microphone.
- * 3. View the live transcription of your speech on screen.
- * 4. See the real-time translation of your speech into the target language.
- * 5. Listen to the translated speech via audio playback.
- * 6. Click "Stop" to end the current session.
- */
+## Usage Guide
 
-/**
- * AI Tools and APIs Used:
- * 
- * - Google Translate API:
- *   Uses Google's unofficial API endpoint to translate text between languages.
- * 
- * - Web Speech API:
- *   Browser native SpeechRecognition API for live speech-to-text transcription.
- *   Browser native SpeechSynthesis API for text-to-speech audio playback.
- * 
- * - Hugging Face API (Optional):
- *   Provides advanced natural language processing features to enhance translation quality.
- */
+1. Select source and target languages from the dropdown menus.  
+2. Click **Start Speaking** and talk into your microphone.  
+3. View the live transcription of your speech on screen.  
+4. See the real-time translation of your speech into the target language.  
+5. Listen to the translated speech via audio playback.  
+6. Click **Stop** to end the current session.  
+
+---
+
+## AI Tools and APIs Used
+
+- **Google Translate API:**  
+  Uses Google's unofficial API endpoint to translate text between languages.
+
+- **Web Speech API:**  
+  Browser native SpeechRecognition API for live speech-to-text transcription.  
+  Browser native SpeechSynthesis API for text-to-speech audio playback.
+
+- **Hugging Face API (Optional):**  
+  Provides advanced natural language processing features to enhance translation quality.
