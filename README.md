@@ -6,6 +6,7 @@ A real-time multilingual healthcare translation web app that converts spoken inp
 
 ## Demo
 [(https://healthcaretranslator1.netlify.app/)]
+login creds: username: admin password: 1234
 
 ---
 
