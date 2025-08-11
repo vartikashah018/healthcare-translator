@@ -30,13 +30,6 @@ login creds: username: admin password: 1234
   - Hugging Face API for advanced NLP (optional)
 
 ---
-
-## Installation
-
-1. Clone the repository  
-   ```bash
-   git clone https://github.com/your-username/healthcare-translation-vite.git
-   cd healthcare-translation-vite
 ## Usage Guide
 
 1. Select source and target languages from the dropdown menus.  
